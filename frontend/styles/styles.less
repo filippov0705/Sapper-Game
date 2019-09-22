@@ -1,0 +1,261 @@
+@header-image: '../img/images.png';
+
+
+td {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+.body {
+  min-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.mainWrapper {
+  border: 1px solid black;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: antiquewhite;
+}
+
+.green {
+  background-color: green;
+}
+
+.number {
+  font-size: 49px;
+}
+
+.tool-wrapper {
+  width: 200px;
+  height: 60px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.flag-wrapper,
+.question-wrapper {
+  width: 55px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag,
+.workFlag,
+.workQuestion,
+.question {
+  width: 37px;
+  height: 37px;
+  margin: 9px;
+}
+
+.focus {
+  background-color: white;
+}
+
+.alert {
+  width: 300px;
+  height: 135px;
+  background-color: rgb(235, 219, 219);
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-wrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.548);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+  }
+
+  &-text {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+  }
+
+  &-button {
+      width: 100px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 5px;
+  }
+}
+
+.registration-alert {
+  font-size: 16px;
+}
+
+.button {
+  width: 130px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.mainWrapper {
+  backface-visibility: hidden;
+}
+
+.table-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.progress {
+  width: 96%;
+  height: 11px;
+  background-image: linear-gradient(to right, rgb(85, 85, 247) 0% , rgb(235, 219, 219) 0%);
+  margin-left: 2%;
+  border-radius: 5px;
+
+  &-bar {
+    width: 100%;
+    height: 16px;
+    background-color: rgb(235, 219, 219);
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.mine {
+  background: white url(@header-image) center center no-repeat;
+  background-size: 40px 40px;
+}
+
+.winrate {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid green;
+  position: absolute;
+  top: -80px;
+  right: -125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & span {
+    font-size: 35px;
+  }
+}
+
+.registrationSubmit {
+  margin-bottom: 100px;
+}
+
+
+.registration-wrapper,
+.submit-wrapper {
+  width: 299px;
+  height: 160px;
+  background-color: rgb(235, 219, 219);
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.marks-wrapper {
+  width: 300px;
+  display: flex;
+
+  & span {
+    font-size: 18px;
+  }
+}
+
+.submit-wrapper {
+  display: none;
+}
+
+.registrationMark,
+.submitMark {
+  width: 50%;
+  height: 50px;
+  background-color: rgb(235, 219, 219);
+  border: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  border-bottom: 1px solid rgb(235, 219, 219);
+}
+
+.registration,
+.submit {
+  width: 84%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+
+  & button {
+    width: 75px;
+    height:35px;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 1px solid black;
+  }
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
+@media(max-width: 1060px) {
+  .winrate {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    top: -63px;
+    right: 0;
+  }
+}
